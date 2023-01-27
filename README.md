@@ -3,4 +3,4 @@ This full stack web apppication uses Context API, JWT, custom hooks and React ca
 
 First, launch server (npm start) from "api" folder
 
-Second, launch client (npm star) from "client" folder
+Second, launch client (npm start) from "client" folder
