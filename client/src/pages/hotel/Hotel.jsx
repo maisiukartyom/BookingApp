@@ -107,7 +107,7 @@ function Hotel() {
               onClick={() => handleMove("l")}
             />
             <div className="sliderWrapper">
-              <img src={data.photos[slideNumber]} alt="" className="sliderImg" />
+              <img src={photos[slideNumber].src} alt="" className="sliderImg" />
             </div>
             <FontAwesomeIcon
               icon={faCircleArrowRight}
@@ -130,11 +130,11 @@ function Hotel() {
             Book a stay over ${data.cheapestPrice} at this property and get a free airport taxi
           </span>
           <div className="hotelImages">
-            {data.photos?.map((photo, i) => (
+            {photos?.map((photo, i) => (
               <div className="hotelImgWrapper" key={i}>
                 <img
                   onClick={() => handleOpen(i)}
-                  src={photo}
+                  src={photo.src}
                   alt=""
                   className="hotelImg"
                 />
